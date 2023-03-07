@@ -10,67 +10,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer> </script>
 
 
     <title>MG-Portfolio</title>
-</head>
+</head> 
 <body>
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">MG-Visions</a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">
-                            <i class="uil uil-estate nav__icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Skills
-                        </a>
-                    </li>
-                    
-                    <li class="nav__item">
-                        <a href="#projects" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Projects
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contact 
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
-
-            <div class="nav__btns">
-                <i class="uil uil-palette theme-customization"></i>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
+        <div class="background"></div>
+    <button class="navbar-burger" onclick="toggleMenu()"></button>
+    <div class="menu">
+      <nav>
+        <a href="#home" style="animation-delay: 0.1s">Home</a>
+        <a href="#about" style="animation-delay: 0.2s">About</a>
+        <a href="#skills" style="animation-delay: 0.3s">Skills</a>
+        <a href="#projects" style="animation-delay: 0.4s">Projects</a>
+        <a href="#contact" style="animation-delay: 0.5s">Contact</a>
+      </nav>
+    </div>
     </header>
     <section id="home" class="center"> 
         <div class="main_container">
             <p class="p2"> Hi, my name is </p>
-            <h2> Maximilian Gust
-            <br> I create experience for the web.
+            <h2 class="animate__animated animate__backInDown"> Maximilian Gust
+            <br> A Frontend developer
+            <br> Based in Odense
             </h2>
-            <span class="p3">I'm a <span style="color:#F4D03F"> Multimediadesigner</span>. Who is focused on App- and Webdesign.</span>
         </div>
     </section>
 
@@ -78,24 +53,23 @@
         <div class="main_container">
             <div class="split">
                 <div>
-                    <img src="img/maxb.png" alt="happy picture of my selv">
+                    <img class="tagline" src="img/maxb.png" alt="happy picture of my selv">
                 </div>
                 <div>
-                    <h1> Who am I</h1><br>
-                        <p class="p1">
-                        Hi there! My name is Maximilian. I'm a German guy who lives
-                        in Odense, Denmark. I'm always looking for new
+                    <h1 class="first"> Who am I</h1><br>
+                        <p class="p1 tagline">
+                        Hi there! My name is Maximilian. I'm always looking for new
                         challenges and love to learn about designing with
                         technology.
                         </p> 
-                        <p class="p1">
+                        <p class="p1 tagline">
                         I am a person, who enjoys to collaborate and get 
                         inspired by each other, to reach a higher level of useful
                         skills and professional knowledge.
                         </p>
-                        <p class="p1"> 
+                        <p class="tagline"> 
                         In my spare time, I enjoy spending time with my family,
-                        meeting friends and  my own projects.
+                        meeting friends and sport.
                         </p>
                                
                 </div>
@@ -107,37 +81,48 @@
         <div class="main_container">
             <div class="split">
                 <div>
-                    <h1> My Skills</h1><br>
-                    <p class="p1">
+                    <h1 class="first"> My Skills</h1><br>
+                    <p class="p1 tagline">
                         I have experience in Prototyping, 
                         as well as in User Testing. Besides i have worked with 
                         building and maintain sites in WordPress.
                     </p>
-                    <p class="p1">
+                    <p class="p1 tagline">
                         My goal, is always to create responsible solutions with 
-                        HTML5 & CSS. I have basic knowledge in Javascript and start to learn
-                        React.js. There is still a lot to learn but I enjoy
+                        HTML5 & CSS. I have basic knowledge in Javascript. There is still a lot to learn but I enjoy
                         that path. 
                     </p>
                 </div>
                 <div class="flex-wrapper1">
                     <div class="flex-child1">
-                       <a> <img src="img/html.png" alt="html5 logo"></a>
+                        <div class="card_skills tagline">
+                            <h4 class="skills_pos"> HTML </h4> 
+                        </div>
                     </div>
                     <div class="flex-child1">
-                       <a> <img src="img/css.png"  alt="css logo"></a>
+                       <div class="card_skills tagline">
+                            <h4 class="skills_pos"> CSS </h4> 
+                        </div>
                     </div>
                     <div class="flex-child1">
-                        <a> <img src="img/js.png"  alt="illustrator logo"></a>
+                       <div class="card_skills tagline">
+                            <h4 class="skills_pos"> JS </h4> 
+                        </div>
                     </div>
                     <div class="flex-child1">
-                        <a> <img src="img/xd.png"  alt="illustrator logo"></a>
+                        <div class="card_skills punchline">
+                            <h4 class="skills_pos h4_color"> XD </h4> 
+                        </div>
                     </div>
                     <div class="flex-child1">
-                        <a> <img src="img/photoshop.png" alt="photoshop logo"></a>
+                        <div class="card_skills punchline">
+                            <h4 class="skills_pos h4_color"> PS </h4> 
+                        </div>
                     </div>
                     <div class="flex-child1">
-                        <a> <img src="img/illustrator.png"   alt="xd logo"></a>
+                        <div class="card_skills punchline">
+                            <h4 class="skills_pos h4_color"> AI </h4> 
+                        </div>
                     </div>
                     
                 </div>    
@@ -147,10 +132,11 @@
     </section>
 
     <section id="projects" class="center"> 
-        <h1 class="headline-projects">Projects</h1><br>
+        <h1 class="headline-projects first">Projects</h1><br>
             <div class="flex-wrapper2">
                 
-                <div class="flex-child2">
+                <div class="flex-child2 tagline">
+                        
                     <a href="html/hydrov.html"> <img src="img/hydroverticimg.png" alt="spaceholder for next projekt"></a>
                     <button class="b6"></button>
                 </div>
@@ -181,13 +167,13 @@
     <div class="main_container">
         <div class="split">
             <div>
-                <h1>Let's talk</h1>
-                <h3>over coffee and tea</h3>
+                <h1 class="first">Let's talk</h1>
+                <h3 class="tagline">over coffee and tea</h3>
                 
-                <img src="img/max1.jpg" alt="me with coffee">
+                <img class="tagline" src="img/max1.jpg" alt="me with coffee">
                 
             </div>
-            <div class="position-text">
+            <div class="position-text punchline">
                 <h3>Or send me a mail.</h3><br>
                 <div class="mail">
                     <i class="bi bi-envelope"></i>
