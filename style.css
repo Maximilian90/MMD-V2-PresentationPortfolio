@@ -168,7 +168,11 @@ body {
     }
   }
 
+
+
 /* maybe nav end */
+
+
 .card_skills { 
     display: flex;
     align-items: center;
@@ -184,7 +188,21 @@ body {
                 10px -10px 0px #ffffff;
 }
 
+.card_skills1 { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self:center;
+    padding-left: 4%;
+    height: 80px;
+    width: 120px;
+    padding-right: 15px;
+    border-radius: 30px;
+    background: linear-gradient(225deg, #ccc8c8, #f3eeee);
+    box-shadow: -10px 10px 0px #ada9a9,
+                10px -10px 0px #ffffff;
 
+}
 
 /* card */
 
@@ -367,19 +385,7 @@ ul {
     cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-    .nav__menu {
-        position: fixed;
-        bottom: -100%;
-        left: 0;
-        width: 100%;
-        background-color: whitesmoke;
-        padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4px rgba(0, 0, 0, .15 );
-        border-radius: 1.2rem 1.2rem 0 0;
-        transition: .3s;
-    }
-}
+
 
 .nav__list {
     display: grid;
@@ -418,55 +424,11 @@ ul {
     bottom: 0;
 }
 
-@media screen and (max-width: 350px) { 
-    .nav__menu {
-        padding: 2rem .25rem 4rem;
-    }
 
-    .nav__list {
-        column-gap: 0;
-    }
-}
-
-@media screen and (min-width: 767px) {
-    .header {
-        top: 0;
-        bottom: initial;
-    }
-
-    .nav {
-        height: 4.5rem;
-        column-gap: 1rem;
-    }
-
-    .nav__icon,
-    .nav__close,
-    .nav__toggle {
-        display: none;
-    }
-
-    .nav__list {
-        display: flex;
-        column-gap: 2rem;
-    }
-
-    .nav__menu {
-        margin-left: auto;
-    }
-
-    .theme-customization {
-        margin: 0;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
 
 /* body */
+
+
 
 .main_container {
     margin-inline: auto;
@@ -695,10 +657,11 @@ button {
 @media (max-width: 1200px){
     .center {
         width: 80vw;
+        height: 100vh;
     }
     .split1 {
-        width: 80vw;
-    }
+        width: 90vw;
+        }
 }
 @media (max-width: 752px) {
    
